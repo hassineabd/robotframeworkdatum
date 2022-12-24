@@ -14,7 +14,7 @@ with open(join(CURDIR, 'requirements.txt')) as f:
 
 setup(
     name="robotframework-Datum",
-    version="1.0.9",
+    version="1.1.0",
     author="Abdelkader HASSINE;           Rafik SAADA",
     author_email="contact.abdelkaderhassine@gmail.com",
     description="robot framework library that contains a set of functions for working with JSON, PDf and Text..",
