@@ -14,14 +14,13 @@ with open(join(CURDIR, 'requirements.txt')) as f:
 
 setup(
     name="robotframework-Datum",
-    version="1.1.0",
+    version="1.1.1",
     author="Abdelkader HASSINE;           Rafik SAADA",
     author_email="contact.abdelkaderhassine@gmail.com",
     description="robot framework library that contains a set of functions for working with JSON, PDf and Text..",
     long_description=README,
-    home_page="https://github.com/hassineabd/robotframeworkdatum",
     long_description_content_type="text/markdown",
-    url="https://comparepdf.github.com",
+    url="https://github.com/hassineabd/robotframeworkdatum",
     classifiers=[
         "Topic :: Software Development :: Testing",
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
