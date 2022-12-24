@@ -2,9 +2,10 @@
 requires = ["setuptools", "wheel"]
 
 [tool.packaging]
-dynamic = ["authors", "classifiers", "dependencies"]
+dynamic = ["authors", "classifiers", "dependencies", ]
 
-[project]
+
+[metadata]
 name = "robotframework-Datum"
 version = "1.0.9" 
 description = "robot framework library that contains a set of functions for working with JSON, PDF and Text.."
