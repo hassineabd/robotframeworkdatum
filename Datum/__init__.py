@@ -164,3 +164,6 @@ class Datum():
             string = string.lower()
             paragraph = paragraph.lower()
         return paragraph.count(string)
+
+
+    
