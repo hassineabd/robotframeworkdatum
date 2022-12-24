@@ -26,12 +26,12 @@ jobs:
         if [ -f dist/*.tar.gz ] || [ -f dist/*.whl ]; then
           sudo rm -r dist/*.tar.gz dist/*.whl
         fi
-        
+
     - name: Build a binary wheel and a source tarball
       run: >-
         python setup.py sdist bdist_wheel
 
-    - name: Publish distribution 📦 to PyPI
+    - name: Publish distribution to PyPI
       if: startsWith(github.ref, 'refs/tags')
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
