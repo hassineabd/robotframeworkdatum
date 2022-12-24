@@ -25,11 +25,11 @@ jobs:
         pip install -r requirements.txt
     #- name: Deactivate the virtual environment
      # run: deactivate
-    #- name: Delete old packages
-     # run: >-
-      #  if [ -f dist/*.tar.gz ] || [ -f dist/*.whl ]; then
-       #   sudo rm -r dist/*.tar.gz dist/*.whl
-        #fi
+    - name: Delete old packages
+      run: >-
+        if [ -f dist/*.tar.gz ] || [ -f dist/*.whl ]; then
+          sudo rm -r dist/*.tar.gz dist/*.whl
+        fi
     - name: Build a binary wheel and a source tarball
       run: >-
         python setup.py sdist bdist_wheel
